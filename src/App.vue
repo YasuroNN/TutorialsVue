@@ -1,22 +1,22 @@
 <template>
   <div id="app">
 
-    <app-pizza></app-pizza>
-    <app-counter></app-counter>
+      <h2 v-colored:background="'red'">{{ title }}</h2>
+      <h2 v-colored:color="'orange'">{{ title }}</h2>
+      
 
   </div>
 </template>
 
 <script>
-import Pizza from "./Pizza.vue";
-import Counter from "./Counter.vue"
 export default {
   name: "app",
 
-  components: {
-    appPizza: Pizza,
-    appCounter: Counter
-  },
+  data() {
+    return {
+      title: "Derective"
+    }
+  }
 
 };
 </script>
