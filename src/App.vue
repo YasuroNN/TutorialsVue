@@ -9,12 +9,19 @@
     ></app-pizza>
 
     <app-counter></app-counter>
+
+------------HTML component_---------------
+    <app-html>
+      <h2 slot="htmlOne">HtmlOneContent</h2>
+      <p slot="htmlTwo">HtmlTwoContent</p>
+    </app-html>
   </div>
 </template>
 
 <script>
 import Pizza from "./Pizza.vue";
 import Counter from "./Counter.vue"
+import HtmlComponent from "./Html.vue"
 export default {
   name: "app",
   data() {
@@ -25,7 +32,8 @@ export default {
   },
   components: {
     appPizza: Pizza,
-    appCounter: Counter
+    appCounter: Counter,
+    appHtml: HtmlComponent
   },
 
   methods: {
